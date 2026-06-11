@@ -8,6 +8,7 @@ app = Flask(__name__)
 CORS(app)  
 
 
+
 def load_function (path_file):
     with open(path_file, "r", encoding="utf-8") as arquivo:
         return json.load(arquivo)
